@@ -10,8 +10,8 @@ const forecast = require('./utils/forecast')
 //console.log(path.join(__dirname,'../public'))
 
 const app = express()
-console.log('Port value from envionrment = ' + process.env.port)
-const port = process.env.port || 3000
+console.log('Port value from envionrment = ' + process.env.PORT)
+const port = process.env.PORT || 3000
 
 
 
