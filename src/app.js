@@ -10,6 +10,7 @@ const forecast = require('./utils/forecast')
 //console.log(path.join(__dirname,'../public'))
 
 const app = express()
+console.log('Port value from envionrment = ' + process.env.port)
 const port = process.env.port || 3000
 
 
@@ -120,5 +121,5 @@ app.get('*', (req, res) => {
 
 //Start the server
 app.listen(port, () =>{
-    console.log('Server is up on port' +  port)
+    console.log('Server is up on port ' +  port)
 })
